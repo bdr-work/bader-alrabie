@@ -1,0 +1,29 @@
+.main {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+  margin-left: 15px;
+  opacity: 1;
+  animation: opacity 4s alternate-reverse linear infinite;
+}
+.error {
+  color: red;
+  font-weight: bold;
+}
+svg {
+  color: red;
+  margin-left: 3px;
+  font-size: 14px;
+}
+@keyframes opacity {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
+}

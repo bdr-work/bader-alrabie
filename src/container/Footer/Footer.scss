@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Passions+Conflict&display=swap");
+//Dark Mode Style
+#dark .contaianer {
+  background-color: var(--card-color-dark);
+  color: #fff;
+}
+
+///////////////////////////////////////
+
+.contaianer {
+  width: 100%;
+  background-color: var(--secondary-color);
+  padding: 2rem;
+  text-align: center;
+  color: #fff;
+
+  .footer-text {
+    font-size: 45px;
+    font-weight: normal;
+    font-family: "Passions Conflict", cursive;
+    margin-bottom: 1.5rem;
+    @media screen and (max-width: 500px) {
+      font-size: 45px;
+    }
+  }
+
+  .copy {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-weight: normal;
+
+    SVG {
+      color: #fff;
+      margin-left: 0.5rem;
+    }
+  }
+}

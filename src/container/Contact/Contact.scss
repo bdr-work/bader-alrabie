@@ -1,0 +1,175 @@
+.app__contact {
+  flex: 1;
+  width: 100%;
+  flex-direction: column;
+}
+//Dark Mode Style
+#dark .app__contact .head-text {
+  color: var(--text-color-dark);
+
+  span {
+    color: #fff;
+  }
+}
+
+#dark .app__contact-box {
+  background-color: var(--card-color-dark);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+  &:hover {
+    border-color: var(--text-color-dark);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  }
+  .img-box {
+    border-bottom: 2px dotted var(--sub-text-color-dark);
+  }
+
+  //   form {
+  //     display: flex;
+  //     flex-wrap: wrap;
+  //     width: 100%;
+  //     align-items: center;
+  //     justify-content: space-between;
+  //     gap: 40px;
+  //     div {
+  //       //   position: relative;
+  //       width: 390px;
+
+  //       //   display: flex;
+  //       //   justify-content: center;
+  //       @media screen and (max-width: 1200px) {
+  //         width: 100%;
+  //         margin: 1rem auto;
+  //       }
+  //       @media screen and (max-width: 500px) {
+  //         width: 100%;
+  //       }
+  //     }
+
+  // svg {
+  //   position: absolute;
+  //   left: 0;
+  //   color: red;
+  //   width: 8px;
+  //   margin: 0.5rem;
+  // }
+
+  // input,
+  // textarea {
+  //   width: 100%;
+  //   padding: 1rem;
+  //   padding-left: 1.5rem;
+  //   border: 2px solid transparent;
+  //   border-radius: 10px;
+  //   background-color: var(--primary-color);
+  //   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  //   transition: all 0.2s ease-in-out;
+  //   font-size: 16px;
+  //   outline: none;
+
+  //   &:hover {
+  //     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  //   }
+  //   &:focus {
+  //     border: 2px solid #313bac3a;
+  //     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  //   }
+  // }
+  //   }
+}
+////////////////////////
+
+.app__contact-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.app__contact-box {
+  background-color: #fff;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 2rem;
+  margin: 3rem auto;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+
+  .img-box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+    border-bottom: 2px dotted var(--primary-color);
+  }
+
+  //   form {
+  //     display: flex;
+  //     flex-wrap: wrap;
+  //     width: 100%;
+  //     align-items: center;
+  //     justify-content: space-between;
+  //     gap: 40px;
+  //     div {
+  //       //   position: relative;
+  //       width: 390px;
+
+  //       //   display: flex;
+  //       //   justify-content: center;
+  //       @media screen and (max-width: 1200px) {
+  //         width: 100%;
+  //         margin: 1rem auto;
+  //       }
+  //       @media screen and (max-width: 500px) {
+  //         width: 100%;
+  //       }
+  //     }
+
+  // svg {
+  //   position: absolute;
+  //   left: 0;
+  //   color: red;
+  //   width: 8px;
+  //   margin: 0.5rem;
+  // }
+
+  // input,
+  // textarea {
+  //   width: 100%;
+  //   padding: 1rem;
+  //   padding-left: 1.5rem;
+  //   border: 2px solid transparent;
+  //   border-radius: 10px;
+  //   background-color: var(--primary-color);
+  //   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  //   transition: all 0.2s ease-in-out;
+  //   font-size: 16px;
+  //   outline: none;
+
+  //   &:hover {
+  //     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  //   }
+  //   &:focus {
+  //     border: 2px solid #313bac3a;
+  //     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  //   }
+  // }
+  //   }
+}
+
+///Language Style
+
+.head-text-ar {
+  direction: rtl;
+  text-align: right;
+}
+.app__contact-container-ar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-family: "Tajawal", sans-serif;
+  direction: rtl !important;
+}

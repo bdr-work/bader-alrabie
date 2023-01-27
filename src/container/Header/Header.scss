@@ -1,0 +1,394 @@
+@import url("https://fonts.googleapis.com/css2?family=Passions+Conflict&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;700;800;900&display=swap");
+//Dark Mode Style
+#dark #home,
+#dark #الرئيسية {
+  background: url(../../assets/maze-black.png);
+
+  background-repeat: repeat;
+  background-color: var(--primary-dark);
+}
+
+#dark .app__header-badge {
+  .welcome {
+    p {
+      color: var(--sub-text-color-dark);
+    }
+  }
+  .badge-cmp {
+    span {
+      color: var(--text-color-dark);
+      strong {
+        font-size: 30px;
+        @media screen and (max-width: 2000px) {
+          font-size: 25px;
+        }
+      }
+      @media screen and (max-width: 2000px) {
+        font-size: 22px;
+      }
+    }
+  }
+  .badge-cmp,
+  .tag-cmp {
+    background-color: var(--primary-dark);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+  }
+  .tag-cmp {
+    span {
+      font-weight: normal;
+      text-transform: none;
+      font-size: 18px;
+      letter-spacing: 1px;
+      color: var(--text-color-dark);
+      @media screen and (max-width: 400px) {
+        font-size: 16px;
+      }
+
+      strong {
+        color: var(--text-color-dark);
+      }
+    }
+    p {
+      color: var(--gray-color);
+      @media screen and (max-width: 400px) {
+        font-size: 16px;
+      }
+    }
+  }
+  span {
+    font-size: 2rem;
+    @media screen and (min-width: 2000px) {
+      font-size: 5rem;
+    }
+  }
+}
+
+#dark .app__header-circles {
+  div {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid var(--sub-text-color-dark);
+    background: var(--primary-dark);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+
+    img {
+      width: 60%;
+      height: 60%;
+    }
+  }
+
+  div:nth-child(1) {
+    width: 100px;
+    height: 100px;
+  }
+  div:nth-child(2) {
+    margin: 1.75rem;
+    width: 150px;
+    height: 150px;
+  }
+  div:nth-child(3) {
+    width: 70px;
+    height: 70px;
+  }
+  @media screen and (min-width: 2000px) {
+    div:nth-child(1) {
+      width: 400px;
+      height: 400px;
+    }
+    div:nth-child(2) {
+      width: 170px;
+      height: 170px;
+    }
+    div:nth-child(3) {
+      width: 200px;
+      height: 200px;
+    }
+  }
+  @media screen and (max-width: 1200px) {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 0;
+
+    div {
+      margin: 1rem;
+    }
+  }
+}
+#dark .webMernPhp span {
+  color: var(--text-color-dark);
+}
+/////////////
+
+#home,
+#الرئيسية {
+  background: url(../../assets/retina-dust.png);
+
+  // background: url("../../assets/bgIMG.png");
+  // background-size: cover;
+  // background-repeat: repeat;
+  // background-position: center;
+  background-color: #fff;
+  .app__wrapper {
+    padding: 0;
+
+    .copyright {
+      display: none;
+    }
+  }
+}
+
+.app__header {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  flex-direction: row;
+  padding: 6rem 2rem 0;
+
+  @media screen and (min-width: 2000px) {
+    padding-top: 8rem;
+  }
+  @media screen and (max-width: 1200px) {
+    flex-direction: column;
+  }
+  @media screen and (max-width: 450px) {
+    padding: 6rem 1rem 2rem;
+  }
+}
+
+.app__header-info {
+  flex: 0.75;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+
+  @media screen and (max-width: 2000px) {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
+.app__header-badge {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+
+  .welcome {
+    display: flex;
+    align-items: center;
+    padding: 1rem 0rem;
+    p {
+      color: black;
+      font-size: 35px;
+      font-weight: bold;
+      font-family: "Passions Conflict", cursive;
+    }
+  }
+  .badge-cmp {
+    position: relative;
+    min-width: 360px;
+    display: flex;
+    align-items: center;
+
+    @media screen and (max-width: 2000px) {
+      min-width: 300px;
+    }
+  }
+  .badge-cmp {
+    .head-text {
+      width: 100%;
+    }
+    span {
+      color: var(--secondary-color);
+      font-weight: normal;
+      text-transform: none;
+      text-align: left;
+      font-size: 25px;
+      letter-spacing: 1px;
+      strong {
+        font-size: 30px;
+        @media screen and (max-width: 2000px) {
+          font-size: 25px;
+        }
+      }
+      @media screen and (max-width: 2000px) {
+        font-size: 22px;
+      }
+    }
+  }
+  .badge-cmp,
+  .tag-cmp {
+    padding: 0.5rem 2rem;
+    background-color: var(--primary-color);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    flex-direction: row;
+    // border: 2px solid var(--white-color);
+    transition: all 0.3s ease-in-out;
+  }
+  .tag-cmp {
+    flex-direction: column;
+    margin-top: 3rem;
+    min-width: 380px;
+    span {
+      font-weight: normal;
+      text-transform: none;
+      font-size: 18px;
+      letter-spacing: 1px;
+      color: var(--secondary-color);
+      @media screen and (max-width: 400px) {
+        font-size: 16px;
+      }
+
+      strong {
+        color: var(--secondary-color);
+      }
+    }
+    p {
+      width: 100%;
+      letter-spacing: 1px;
+      font-size: 18px;
+      text-transform: uppercase;
+      text-align: left;
+      @media screen and (max-width: 400px) {
+        font-size: 16px;
+      }
+    }
+    @media screen and (max-width: 400px) {
+      min-width: 350px;
+    }
+  }
+
+  span {
+    font-size: 2rem;
+
+    @media screen and (min-width: 2000px) {
+      font-size: 5rem;
+    }
+  }
+  @media screen and (max-width: 1200px) {
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+}
+
+.app__header-circles {
+  flex: 0.75;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  height: 100%;
+  margin-left: 1rem;
+
+  div {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: var(--white-color);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+
+    img {
+      width: 60%;
+      height: 60%;
+    }
+  }
+
+  div:nth-child(1) {
+    width: 100px;
+    height: 100px;
+  }
+  div:nth-child(2) {
+    margin: 1.75rem;
+    width: 150px;
+    height: 150px;
+  }
+  div:nth-child(3) {
+    width: 70px;
+    height: 70px;
+  }
+  @media screen and (min-width: 2000px) {
+    div:nth-child(1) {
+      width: 400px;
+      height: 400px;
+    }
+    div:nth-child(2) {
+      width: 170px;
+      height: 170px;
+    }
+    div:nth-child(3) {
+      width: 200px;
+      height: 200px;
+    }
+  }
+  @media screen and (max-width: 1200px) {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 0;
+
+    div {
+      margin: 1rem;
+    }
+  }
+}
+
+.app__header-img {
+  flex: 1;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  img {
+    width: 60%;
+    object-fit: contain;
+    z-index: 1;
+    left: 0;
+  }
+
+  @media screen and (max-width: 1200px) {
+    margin: 2rem 0;
+  }
+}
+
+//Languages Style
+.app__header-ar {
+  direction: rtl;
+}
+.app__header-badge-ar {
+  direction: rtl;
+}
+.app__header-circles-ar {
+  div:nth-child(1) {
+    margin-left: 8rem;
+  }
+  div:nth-child(3) {
+    margin-left: 8.2rem;
+  }
+}
+.head-text-ar {
+  text-align: right !important;
+}
+.badge-cmp-ar {
+  min-width: 330px !important;
+  @media screen and (max-width: 2000px) {
+    min-width: 300px !important;
+  }
+}
+.tag-cmp-ar {
+  p {
+    text-align: right !important;
+  }
+}
+.welcome-ar p {
+  font-family: "Tajawal", sans-serif !important;
+}

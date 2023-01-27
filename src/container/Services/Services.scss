@@ -1,0 +1,149 @@
+.app__services {
+  flex: 1;
+  width: 100%;
+  flex-direction: column;
+}
+
+//Dark Mode Style
+#dark .app__services .head-text {
+  color: var(--text-color-dark);
+  span {
+    color: #fff;
+  }
+}
+#dark .app__service-container {
+  .app__services-box {
+    background-color: var(--primary-dark);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+    .app__service-title {
+      svg {
+        color: #fff;
+        transition: all 0.3s ease;
+      }
+      p {
+        transition: all 0.3s ease;
+        color: var(--text-color-dark);
+      }
+
+      &:hover {
+        background-color: var(--primary-dark);
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+      }
+      &:hover p {
+        color: var(--text-color-dark);
+      }
+      &:hover svg {
+        color: #fff;
+      }
+    }
+  }
+}
+///////////////////////////////
+.app__service-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  .app__services-box {
+    background-color: #fff;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    flex-wrap: wrap;
+    padding: 2rem;
+    margin: 3rem auto;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+
+    .app__service-title {
+      display: flex;
+      text-align: left;
+      align-items: flex-start;
+      justify-content: left;
+      margin: 0.5rem 2.5rem;
+      padding: 0.5rem;
+      position: relative;
+      width: 300px;
+      border-radius: 10px;
+      transition: all 0.3s ease-in-out;
+
+      svg {
+        color: var(--secondary-color);
+        margin-right: 0.4rem;
+        margin-top: 2px;
+        min-width: 20px;
+        font-size: 20px;
+        @media screen and (max-width: 500px) {
+          font-size: 18px;
+        }
+      }
+      p {
+        color: var(--gray-color);
+        font-size: 18px;
+        @media screen and (max-width: 500px) {
+          font-size: 0.875rem;
+          line-height: 1.25rem;
+        }
+      }
+
+      &:hover {
+        background-color: var(--primary-color);
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+      }
+      @media screen and (max-width: 1200px) {
+        width: 100%;
+
+        margin: 0.6rem 0.2rem;
+      }
+      @media screen and (max-width: 500px) {
+        padding: 0.3rem;
+      }
+    }
+    @media screen and (max-width: 1200px) {
+      padding: 1rem;
+    }
+  }
+}
+
+//Language Style
+
+.app__service-container-ar {
+  direction: rtl;
+  .app__service-title {
+    text-align: right !important;
+
+    justify-content: right !important;
+
+    svg {
+      margin-left: 0.4rem !important;
+      margin-top: 2px;
+      min-width: 20px;
+      font-size: 20px;
+      @media screen and (max-width: 500px) {
+        font-size: 18px;
+      }
+    }
+    p {
+      color: var(--gray-color);
+      font-size: 18px;
+      @media screen and (max-width: 500px) {
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+      }
+    }
+
+    &:hover {
+      background-color: var(--primary-color);
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    }
+    @media screen and (max-width: 1200px) {
+      width: 100%;
+
+      margin: 0.6rem 0.2rem;
+    }
+    @media screen and (max-width: 500px) {
+      padding: 0.3rem;
+    }
+  }
+}
