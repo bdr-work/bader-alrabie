@@ -1,6 +1,6 @@
 //Dark Mode Style
 #dark .app__navbar {
-  background: var(--nav-color-dark);
+  background: #0000004f;
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   position: fixed;
@@ -66,11 +66,16 @@
 #dark div.menu-box {
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
 }
+#dark .app__navbar-logo::after {
+  position: absolute;
+  content: url(../../assets/logo1.png);
+  object-fit: cover;
+}
 /////////////////
 
 .app__navbar {
   width: 100%;
-
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -84,19 +89,16 @@
   z-index: 2;
 }
 .app__navbar-logo {
+  position: relative;
   display: flex;
   justify-content: flex-start;
   align-items: center;
+}
+.app__navbar-logo::after {
+  position: absolute;
+  content: url(../../assets/logo2.png);
 
-  img {
-    width: 90px;
-    height: 20px;
-
-    @media screen and (min-width: 2000px) {
-      width: 180px;
-      height: 40px;
-    }
-  }
+  object-fit: cover;
 }
 
 .app__navbar-links {

@@ -1,5 +1,3 @@
-import mobile from "../assets/mobile.png";
-
 import css from "../assets/css.png";
 import git from "../assets/git.png";
 import graphql from "../assets/graphql.png";
@@ -12,20 +10,14 @@ import sass from "../assets/sass.png";
 import github from "../assets/github-removebg-preview.png";
 import motion from "../assets/motion.png";
 import sanity from "../assets/sanity.png";
-
-import aboutFace from "../assets/aboutFace.jpg";
-import about02 from "../assets/about02.png";
-import about03 from "../assets/about03.png";
-import about04 from "../assets/about04.png";
 import about04_rm from "../assets/aboutFace(1)3.png";
+import landingbg from "../assets/landing-bg.png";
 
-import profile from "../assets/profile.jpg";
-
-import logo from "../assets/logo.png";
+import logo1 from "../assets/logo1.png";
+import logo2 from "../assets/logo2.png";
 
 export default {
   about04_rm,
-  mobile,
   github,
   motion,
   css,
@@ -34,17 +26,11 @@ export default {
   graphql,
   html,
   javascript,
-
+  landingbg,
   node,
-
   react,
   redux,
   sass,
-
-  aboutFace,
-  about02,
-  about03,
-  about04,
-  profile,
-  logo,
+  logo1,
+  logo2,
 };

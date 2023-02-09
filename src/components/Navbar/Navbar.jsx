@@ -17,9 +17,7 @@ const Navbar = (props) => {
 
   return (
     <nav className="app__navbar">
-      <div className="app__navbar-logo">
-        <img src={images.logo} alt="Logo" />
-      </div>
+      <div className="app__navbar-logo"></div>
       <ul className={`app__navbar-links app__navbar-links-${i18n.language}`}>
         {[
           t("home"),

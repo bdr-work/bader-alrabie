@@ -366,6 +366,9 @@
 }
 .app__header-badge-ar {
   direction: rtl;
+  .badge-cmp-ar span {
+    letter-spacing: 0px !important;
+  }
 }
 .app__header-circles-ar {
   div:nth-child(1) {
@@ -387,6 +390,9 @@
 .tag-cmp-ar {
   p {
     text-align: right !important;
+  }
+  span {
+    letter-spacing: 0px !important;
   }
 }
 .welcome-ar p {

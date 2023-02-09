@@ -84,11 +84,7 @@ const Form = () => {
       <div
         className={`app__contact-container app__contact-container-${i18n.language}`}
       >
-        <motion.div
-          whileInView={{ scale: [0, 1] }}
-          transition={{ delay: 0.3 }}
-          className="app__contact-box"
-        >
+        <div className="app__contact-box">
           <div className="img-box">
             <img src={images.logo} />
           </div>
@@ -327,7 +323,7 @@ const Form = () => {
               )}
             </Button>
           </form>
-        </motion.div>
+        </div>
       </div>
     </>
   );

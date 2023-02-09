@@ -20,7 +20,6 @@ export const ThemeContext = createContext(null);
 
 const App = () => {
   const [t, i18n] = useTranslation();
-
   const [theme, setTheme] = useState("light");
 
   const toggleTheme = () => {
@@ -38,6 +37,7 @@ const App = () => {
             className="light-icon mode"
           />
         )}
+
         {i18n.language === "en" && (
           <div
             onClick={() => {

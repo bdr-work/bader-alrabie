@@ -12,13 +12,13 @@
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #313bacb4;
+  background: #7a89a7;
   border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #313bac;
+  background: var(--secondary-color);
 }
 
 //////////Dark Mode
@@ -358,7 +358,7 @@
 
   padding: 1rem;
 
-  div {
+  a {
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -380,8 +380,8 @@
     }
 
     &:hover {
-      background-color: var(--secondary-color);
-      border-color: var(--secondary-color);
+      background-color: #7a89a7;
+      border-color: var(--primary-color);
 
       svg {
         color: var(--white-color);

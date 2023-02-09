@@ -44,7 +44,7 @@ const Header = () => {
                   autoStart: true,
                   loop: true,
                   skipAddStyles: false,
-                  deleteSpeed: 100,
+                  deleteSpeed: 500,
                   pauseFor: 60000,
                   delay: 170,
                 }}
@@ -75,7 +75,7 @@ const Header = () => {
         transition={{ duration: 0.5, delayChildren: 0.5 }}
         className="app__header-img"
       >
-        <motion.img src={images.about04_rm} alt="Profile-img" />
+        {/* <motion.img src={images.landingbg} alt="Profile-img" /> */}
       </motion.div>
 
       <motion.div
